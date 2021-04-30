@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:two_screen/screens/buyer_screen.dart';
+import 'package:two_screen/screens/profile_screen.dart';
 import 'package:two_screen/screens/seller_screen.dart';
 import 'package:two_screen/screens/worker_screen.dart';
 
@@ -11,11 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'worker_screen',
+      initialRoute: 'profile_screen',
       routes: {
         'seller_screen':(context)=>SellerScreen(),
         'buyer_screen':(context)=>BuyerScreen(),
-        'worker_screen' : (context)=>WorkerScreen()
+        'worker_screen' : (context)=>WorkerScreen(),
+        'profile_screen' : (context)=>ProfileScreen(),
 
       },
     );

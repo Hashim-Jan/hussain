@@ -100,8 +100,9 @@ class WorkerScreen extends StatelessWidget {
                 ///
                 WorkerListTile(
                   title: 'Account',
-                  icon: Icons.account_box_outlined,
+                  leadingIcon: Icons.account_box_outlined,
                   onPressed: ()=>Navigator.pushNamed(context, 'buyer_screen'),
+                  trailingIcon: Icons.arrow_forward_ios_rounded,
                 ),
                 Divider(color: Colors.orange,thickness: 2,),
                 ///
@@ -109,8 +110,9 @@ class WorkerScreen extends StatelessWidget {
                 ///
                 WorkerListTile(
                   title: 'Notification',
-                  icon: Icons.notifications_active_rounded,
+                  leadingIcon: Icons.notifications_active_rounded,
                   onPressed: ()=>Navigator.pushNamed(context, 'seller_screen'),
+                  trailingIcon: Icons.arrow_forward_ios_rounded,
                 ),
                 Divider(color: Colors.orange,thickness: 2,),
                 ///
@@ -118,8 +120,9 @@ class WorkerScreen extends StatelessWidget {
                 ///
                 WorkerListTile(
                   title: 'Terms & Condition',
-                  icon: Icons.assignment_sharp,
+                  leadingIcon: Icons.assignment_sharp,
                   onPressed: ()=>null,
+                  trailingIcon: Icons.arrow_forward_ios_rounded,
                 ),
                 Divider(color: Colors.orange,thickness: 2,),
                 ///
@@ -127,8 +130,9 @@ class WorkerScreen extends StatelessWidget {
                 ///
                 WorkerListTile(
                   title: 'User Agreement',
-                  icon: Icons.assignment,
+                  leadingIcon: Icons.assignment,
                   onPressed: ()=>null,
+                  trailingIcon: Icons.arrow_forward_ios_rounded,
                 ),
                 Divider(color: Colors.orange,thickness: 2,),
                 ///
@@ -136,8 +140,9 @@ class WorkerScreen extends StatelessWidget {
                 ///
                 WorkerListTile(
                   title: 'Share Khizmat',
-                  icon: Icons.share_outlined,
+                  leadingIcon: Icons.share_outlined,
                   onPressed: ()=>null,
+                  trailingIcon: Icons.arrow_forward_ios_rounded,
                 ),
                 Divider(color: Colors.orange,thickness: 2,),
                 ///
@@ -145,8 +150,9 @@ class WorkerScreen extends StatelessWidget {
                 ///
                 WorkerListTile(
                   title: 'Support',
-                  icon: CupertinoIcons.person_circle,
+                  leadingIcon: CupertinoIcons.person_circle,
                   onPressed: ()=>null,
+                  trailingIcon: Icons.arrow_forward_ios_rounded,
                 ),
                 Divider(color: Colors.orange,thickness: 2,),
                 ///
@@ -154,8 +160,9 @@ class WorkerScreen extends StatelessWidget {
                 ///
                 WorkerListTile(
                   title: 'Language',
-                  icon: Icons.language,
+                  leadingIcon: Icons.language,
                   onPressed: ()=>null,
+                  trailingIcon: Icons.arrow_forward_ios_rounded,
                 ),
                 Divider(color: Colors.orange,thickness: 2,),
                 ///
@@ -163,8 +170,9 @@ class WorkerScreen extends StatelessWidget {
                 ///
                 WorkerListTile(
                   title: 'About',
-                  icon: Icons.info_outline_rounded,
+                  leadingIcon: Icons.info_outline_rounded,
                   onPressed: ()=>null,
+                  trailingIcon: Icons.arrow_forward_ios_rounded,
                 ),
                 Divider(color: Colors.orange,thickness: 2,),
                 ///
@@ -172,8 +180,9 @@ class WorkerScreen extends StatelessWidget {
                 ///
                 WorkerListTile(
                   title: 'Log out',
-                  icon: Icons.logout,
+                  leadingIcon: Icons.logout,
                   onPressed: ()=>null,
+                  trailingIcon: Icons.arrow_forward_ios_rounded,
                 ),
               ],
             ),
