@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 class BackButtonHeader extends StatelessWidget {
   Function onPressed;
-  BackButtonHeader({@required this.onPressed});
+  String title;
+  BackButtonHeader({this.title,@required this.onPressed});
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -14,7 +15,7 @@ class BackButtonHeader extends StatelessWidget {
               onPressed:onPressed,
             ),
             Text(
-              'Back',
+              title,
               textScaleFactor: 1.2,
             ),
           ],

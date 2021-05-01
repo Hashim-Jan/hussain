@@ -17,7 +17,7 @@ class BuyerScreen extends StatelessWidget {
               children: [
                 ///
                 /// Header or appbar
-                BackButtonHeader(onPressed: ()=>Navigator.pop(context),),
+                BackButtonHeader(title: 'Back',onPressed: ()=>Navigator.pop(context),),
                 ///
                 /// Buyer details
                 Expanded(
@@ -32,11 +32,11 @@ class BuyerScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 30,),
-                      CustomListTile(title: 'Name',icon: Icons.person,onPressed: null,),
-                      CustomListTile(title: 'Search for services',icon: Icons.search,onPressed: null,),
-                      CustomListTile(title: 'Total hirings',icon: Icons.people_rounded,onPressed: null,),
-                      CustomListTile(title: 'Popular services',icon: Icons.vertical_align_top,onPressed: null,),
-                      CustomListTile(title: 'About me',icon: Icons.details,onPressed: null,),
+                      CustomListTile(title: 'Name',leadingIcon: Icons.person,trailingIcon:Icons.keyboard_arrow_right,onPressed: null,),
+                      CustomListTile(title: 'Search for services',leadingIcon: Icons.search,trailingIcon:Icons.keyboard_arrow_right,onPressed: null,),
+                      CustomListTile(title: 'Total hirings',leadingIcon: Icons.people_rounded,trailingIcon:Icons.keyboard_arrow_right,onPressed: null,),
+                      CustomListTile(title: 'Popular services',leadingIcon: Icons.vertical_align_top,trailingIcon:Icons.keyboard_arrow_right,onPressed: null,),
+                      CustomListTile(title: 'About me',leadingIcon: Icons.details,trailingIcon:Icons.keyboard_arrow_right,onPressed: null,),
                     ],
                   ),
                 )

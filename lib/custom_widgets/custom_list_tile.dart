@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 class CustomListTile extends StatelessWidget {
-  IconData icon;
+  IconData leadingIcon;
+  IconData trailingIcon;
   String title;
   Function onPressed;
-  CustomListTile({this.title,this.icon,@required this.onPressed});
+  CustomListTile({this.title,this.leadingIcon,this.trailingIcon,@required this.onPressed});
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -22,8 +24,9 @@ class CustomListTile extends StatelessWidget {
               child: ListTile(
                 onTap: onPressed,
                 leading: CircleAvatar(
+                  radius: 30,
                   backgroundColor: Colors.grey[400],
-                  child: Icon(icon,color: Colors.black54,),
+                  child: Icon(leadingIcon,color: Colors.black54,),
                 ),
                 title: Text('$title'),
               ),
@@ -32,7 +35,7 @@ class CustomListTile extends StatelessWidget {
         ),
         Align(
           alignment: Alignment.centerRight,
-          child: Icon(Icons.keyboard_arrow_right,size: 30,color: Colors.grey,),
+          child: Icon(trailingIcon,size: 30,color: Colors.grey,),
         ),
       ],
     );

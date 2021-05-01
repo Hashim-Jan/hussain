@@ -16,7 +16,7 @@ class SellerScreen extends StatelessWidget {
               children: [
                 ///
                 /// Header or appbar
-                BackButtonHeader(onPressed: ()=>Navigator.pop(context),),
+                BackButtonHeader(title: 'Back',onPressed: ()=>Navigator.pop(context),),
                 ///
                 /// Seller details
                 Expanded(
@@ -31,11 +31,16 @@ class SellerScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 30,),
-                      CustomListTile(title: 'Name',icon: Icons.person,onPressed: null,),
-                      CustomListTile(title: 'Rating',icon: Icons.star,onPressed: null,),
-                      CustomListTile(title: 'Average Response time',icon: Icons.av_timer,onPressed: null,),
-                      CustomListTile(title: 'Level',icon: Icons.waterfall_chart,onPressed: null,),
-                      CustomListTile(title: 'Customer request',icon: Icons.person_add_alt_1,onPressed: null,),
+                      CustomListTile(
+                        title: 'Name',
+                        leadingIcon: Icons.person,
+                        trailingIcon:Icons.keyboard_arrow_right,
+                        onPressed: null,
+                      ),
+                      CustomListTile(title: 'Rating',leadingIcon: Icons.star,trailingIcon:Icons.keyboard_arrow_right,onPressed: null,),
+                      CustomListTile(title: 'Average Response time',leadingIcon: Icons.av_timer,trailingIcon:Icons.keyboard_arrow_right,onPressed: null,),
+                      CustomListTile(title: 'Level',leadingIcon: Icons.waterfall_chart,trailingIcon:Icons.keyboard_arrow_right,onPressed: null,),
+                      CustomListTile(title: 'Customer request',leadingIcon: Icons.person_add_alt_1,trailingIcon:Icons.keyboard_arrow_right,onPressed: null,),
                     ],
                   ),
                 )
