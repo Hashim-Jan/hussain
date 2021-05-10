@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 class BackButtonHeader extends StatelessWidget {
-  Function onPressed;
-  String title;
+  final Function onPressed;
+  final String title;
   BackButtonHeader({this.title,@required this.onPressed});
   @override
   Widget build(BuildContext context) {

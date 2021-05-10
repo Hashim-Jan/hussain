@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:two_screen/screens/about_us_screen.dart';
 import 'package:two_screen/screens/buyer_screen.dart';
 import 'package:two_screen/screens/create_gig_screen.dart';
+import 'package:two_screen/screens/notification_screen.dart';
+import 'package:two_screen/screens/popular_service_provider.dart';
 import 'package:two_screen/screens/profile_screen.dart';
 import 'package:two_screen/screens/seller_screen.dart';
 import 'package:two_screen/screens/service_provider_screen.dart';
@@ -14,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'service_provider_screen',
+      initialRoute: 'notification_screen',
       routes: {
         'seller_screen':(context)=>SellerScreen(),
         'buyer_screen':(context)=>BuyerScreen(),
@@ -22,6 +25,9 @@ class MyApp extends StatelessWidget {
         'profile_screen' : (context)=>ProfileScreen(),
         'create_gig_screen' : (context)=>CreateGigScreen(),
         'service_provider_screen' : (context)=>ServiceProviderScreen(),
+        'popular_service_provider_screen' : (context)=>PopularServiceProviderScreen(),
+        'about_us_screen' : (context)=>AboutUsScreen(),
+        'notification_screen' : (context)=>NotificationScreen(),
       },
     );
   }
